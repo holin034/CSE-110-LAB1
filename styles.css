@@ -30,6 +30,10 @@
     height: auto;
 }
 
+p {
+    font-size: 28px;
+}
+
 #navbar {
     position: sticky;
     top: 0;
@@ -96,17 +100,14 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
-    /* Hide navbar links */
     .navbar {
         display: none;
     }
 
-    /* Resize logo for small screens */
     .logo {
         max-width: 75%;
     }
 
-    /* Resize header and paragraph text for small screens */
     h2 {
         font-size: 24px;
     }
@@ -115,8 +116,7 @@ ul {
         font-size: 20px;
     }
 
-    /* Change grid to 2-column layout */
     .grid-section {
-        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
