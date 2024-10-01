@@ -1,0 +1,122 @@
+.section#section1 {
+    background-color: rgb(245, 240, 230);
+    width: 100%;
+}
+
+.section#section2 {
+    background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.section#section2 h2,
+.section#section2 p {
+    color: white;
+}
+
+.section#section3 {
+    background-color: rgb(245, 240, 230);
+    width: 100%;
+}
+
+.section {
+    display: inline-block;
+    width: 100%;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px;
+    max-width: 400px;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  
+  #navbar a:hover {
+    background-color: #182b49;
+    color: white;
+  }
+
+/* Grid layout */
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 25px;
+    justify-content: left;
+}
+
+.grid-item {
+    background-color: #182b49;
+    color: white;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: scroll;
+    text-align: justify;
+}
+
+.grid-item p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    /* Hide navbar links */
+    .navbar {
+        display: none;
+    }
+
+    /* Resize logo for small screens */
+    .logo {
+        max-width: 75%;
+    }
+
+    /* Resize header and paragraph text for small screens */
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* Change grid to 2-column layout */
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    }
+}
