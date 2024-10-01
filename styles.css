@@ -78,7 +78,6 @@ ul {
     color: white;
   }
 
-/* Grid layout */
 .grid-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Four equal columns */
@@ -102,6 +101,16 @@ ul {
 @media screen and (max-width: 800px) {
     #navbar {
         display: none;
+    }
+
+    img {
+        max-width: 100%; /* Ensures images shrink to fit within their container */
+        height: auto;
+    }
+    
+    .section {
+        max-width: 100%;
+        width: 100%; /* Use percentage-based widths */
     }
 
     .logo {
